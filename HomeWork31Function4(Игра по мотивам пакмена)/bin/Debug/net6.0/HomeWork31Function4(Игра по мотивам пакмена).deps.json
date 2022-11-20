@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "HomeWork31Function4(Игра по мотивам пакмена)/1.0.0": {
+        "runtime": {
+          "HomeWork31Function4(Игра по мотивам пакмена).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HomeWork31Function4(Игра по мотивам пакмена)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

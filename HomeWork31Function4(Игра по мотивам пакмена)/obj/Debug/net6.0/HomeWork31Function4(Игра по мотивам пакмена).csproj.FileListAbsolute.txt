@@ -1,0 +1,15 @@
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\bin\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).exe
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\bin\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).deps.json
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\bin\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).runtimeconfig.json
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\bin\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).dll
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\bin\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).pdb
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).csproj.AssemblyReference.cache
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).GeneratedMSBuildEditorConfig.editorconfig
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).AssemblyInfoInputs.cache
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).AssemblyInfo.cs
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).csproj.CoreCompileInputs.cache
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).dll
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\refint\HomeWork31Function4(Игра по мотивам пакмена).dll
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).pdb
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\HomeWork31Function4(Игра по мотивам пакмена).genruntimeconfig.cache
+E:\CSlight\HomeWork31Function4(Игра по мотивам пакмена)\HomeWork31Function4(Игра по мотивам пакмена)\obj\Debug\net6.0\ref\HomeWork31Function4(Игра по мотивам пакмена).dll
