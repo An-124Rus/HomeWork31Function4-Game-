@@ -1,16 +1,20 @@
 ﻿internal class Program
-{
+{ 
     private static void Main(string[] args)
     {
+        const ConsoleKey exitCommand = ConsoleKey.Escape;
+
         int playerPositionX;
         int playerPositionY;
         int playerMoveX = 0;
         int playerMoveY = 0;
         bool isPlaying = true;
+        char wallSymbol = '#';
+        char playerSymbol = '@';
 
         Console.CursorVisible = false;
 
-        char[,] map = ReadMap("map1", out playerPositionX, out playerPositionY);
+        char[,] map = ReadMap("map1", playerSymbol, out playerPositionX, out playerPositionY);
 
         DrawMap(map);
 
@@ -18,35 +22,42 @@
         {
             ConsoleKeyInfo key = Console.ReadKey(true);
 
-            if (Console.KeyAvailable || key.Key != ConsoleKey.Escape)
+            if (Console.KeyAvailable || key.Key != exitCommand)
             {
-                GetPlayerDirection(key, ref playerMoveX, ref playerMoveY, ref isPlaying);
+                GetPlayerDirection(key, ref playerMoveX, ref playerMoveY);
 
-                if (map[playerPositionX + playerMoveX, playerPositionY + playerMoveY] != '#')
-                    Move('@', ref playerPositionX, ref playerPositionY, playerMoveX, playerMoveY);
+                if (map[playerPositionX + playerMoveX, playerPositionY + playerMoveY] != wallSymbol)
+                    Move(playerSymbol, ref playerPositionX, ref playerPositionY, playerMoveX, playerMoveY);
             }
             else
+            {
                 isPlaying = false;
+            }
         }
     }
 
-    static void GetPlayerDirection(ConsoleKeyInfo key, ref int moveX, ref int moveY, ref bool isPlaying)
+    static void GetPlayerDirection(ConsoleKeyInfo key, ref int moveX, ref int moveY)
     {
+        const ConsoleKey moveUpCommand = ConsoleKey.UpArrow;
+        const ConsoleKey moveDownCommand = ConsoleKey.DownArrow;
+        const ConsoleKey moveLeftCommand = ConsoleKey.LeftArrow;
+        const ConsoleKey moveRightCommand = ConsoleKey.RightArrow;
+
         switch (key.Key)
         {
-            case ConsoleKey.UpArrow:
+            case moveUpCommand:
                 moveX = -1;
                 moveY = 0;
                 break;
-            case ConsoleKey.DownArrow:
+            case moveDownCommand:
                 moveX = 1;
                 moveY = 0;
                 break;
-            case ConsoleKey.LeftArrow:
+            case moveLeftCommand:
                 moveX = 0;
                 moveY = -1;
                 break;
-            case ConsoleKey.RightArrow:
+            case moveRightCommand:
                 moveX = 0;
                 moveY = 1;
                 break;
@@ -69,7 +80,7 @@
         Console.WriteLine(symbol);
     }
 
-    static char[,] ReadMap(string mapName, out int playerPositionX, out int playerPositionY)
+    static char[,] ReadMap(string mapName, char symbol, out int playerPositionX, out int playerPositionY)
     {
         playerPositionX = 0;
         playerPositionY = 0;
@@ -83,7 +94,7 @@
             {
                 map[i, j] = newFile[i][j];
 
-                if (map[i, j] == '@')
+                if (map[i, j] == symbol)
                 {
                     playerPositionX = i;
                     playerPositionY = j;
