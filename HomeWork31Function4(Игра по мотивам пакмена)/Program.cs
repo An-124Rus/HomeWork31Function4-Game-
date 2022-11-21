@@ -16,19 +16,21 @@
 
         while (isPlaying)
         {
-            if (Console.KeyAvailable)
-            {
-                ConsoleKeyInfo key = Console.ReadKey(true);
+            ConsoleKeyInfo key = Console.ReadKey(true);
 
-                ChangePlayerPosition(key, ref playerMoveX, ref playerMoveY, ref isPlaying);
+            if (Console.KeyAvailable || key.Key != ConsoleKey.Escape)
+            {
+                GetPlayerDirection(key, ref playerMoveX, ref playerMoveY, ref isPlaying);
 
                 if (map[playerPositionX + playerMoveX, playerPositionY + playerMoveY] != '#')
                     Move('@', ref playerPositionX, ref playerPositionY, playerMoveX, playerMoveY);
             }
+            else
+                isPlaying = false;
         }
     }
 
-    static void ChangePlayerPosition(ConsoleKeyInfo key, ref int moveX, ref int moveY, ref bool isPlaying)
+    static void GetPlayerDirection(ConsoleKeyInfo key, ref int moveX, ref int moveY, ref bool isPlaying)
     {
         switch (key.Key)
         {
@@ -47,9 +49,6 @@
             case ConsoleKey.RightArrow:
                 moveX = 0;
                 moveY = 1;
-                break;
-            case ConsoleKey.Escape:
-                isPlaying = false;
                 break;
             default:
                 moveX = 0;
