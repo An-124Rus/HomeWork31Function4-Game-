@@ -38,26 +38,26 @@
 
     static void GetPlayerDirection(ConsoleKeyInfo key, ref int moveX, ref int moveY)
     {
-        const ConsoleKey moveUpCommand = ConsoleKey.UpArrow;
-        const ConsoleKey moveDownCommand = ConsoleKey.DownArrow;
-        const ConsoleKey moveLeftCommand = ConsoleKey.LeftArrow;
-        const ConsoleKey moveRightCommand = ConsoleKey.RightArrow;
+        const ConsoleKey MoveUpCommand = ConsoleKey.UpArrow;
+        const ConsoleKey MoveDownCommand = ConsoleKey.DownArrow;
+        const ConsoleKey MoveLeftCommand = ConsoleKey.LeftArrow;
+        const ConsoleKey MoveRightCommand = ConsoleKey.RightArrow;
 
         switch (key.Key)
         {
-            case moveUpCommand:
+            case MoveUpCommand:
                 moveX = -1;
                 moveY = 0;
                 break;
-            case moveDownCommand:
+            case MoveDownCommand:
                 moveX = 1;
                 moveY = 0;
                 break;
-            case moveLeftCommand:
+            case MoveLeftCommand:
                 moveX = 0;
                 moveY = -1;
                 break;
-            case moveRightCommand:
+            case MoveRightCommand:
                 moveX = 0;
                 moveY = 1;
                 break;
